@@ -216,7 +216,7 @@ const experiences = [
 		],
 	},
 	{
-		title: "Full stack Developer",
+		title: "Full-Stack Developer",
 		company_name: "Chemical Industry Company",
 		icon: terpena,
 		iconBg: "#E6DEDD",
