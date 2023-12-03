@@ -2,6 +2,7 @@ import logo from "./logo-purple-short.svg";
 import avatar from "./avatar.png";
 import audit from "./audit.png";
 import blockchain from "./blockchain.png";
+import database from "./database.png"
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
@@ -38,11 +39,17 @@ import alight from "./company/alight.png";
 import terpena from "./company/terpena.png";
 import vcst from "./company/vcst.png";
 
+import backend from "./project/backend.png";
+import nda from "./project/nda.png";
+import rcdi from "./project/rcdi.png";
+import roulette from "./project/roulette.png";
+
 export {
 	logo,
 	avatar,
 	audit,
 	blockchain,
+	database,
 	mobile,
 	web,
 	github,
@@ -76,4 +83,8 @@ export {
 	alight,
 	terpena,
 	vcst,
+	backend,
+	nda,
+	rcdi,
+	roulette,
 };

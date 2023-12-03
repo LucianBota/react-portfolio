@@ -1,6 +1,7 @@
 import {
 	audit,
 	blockchain,
+	database,
 	mobile,
 	web,
 	c,
@@ -31,6 +32,10 @@ import {
 	alight,
 	terpena,
 	vcst,
+	backend,
+	nda,
+	rcdi,
+	roulette,
 } from "../assets";
 
 export const navLinks = [
@@ -39,13 +44,13 @@ export const navLinks = [
 		title: "About",
 	},
 	{
-		id: "work",
-		title: "Work",
+		id: "projects",
+		title: "Projects",
 	},
-	// {
-	// 	id: "tech",
-	// 	title: "Technologies",
-	// },
+	{
+		id: "work",
+		title: "Experience",
+	},
 	{
 		id: "contact",
 		title: "Contact",
@@ -72,9 +77,13 @@ const services = [
 		icon: blockchain,
 	},
 	{
-		title: "Smart Contract Auditor",
-		icon: audit,
+		title: "Database Architect",
+		icon: database,
 	},
+	// {
+	// 	title: "Smart Contract Auditor",
+	// 	icon: audit,
+	// },
 ];
 
 const technologies = [
@@ -228,4 +237,279 @@ const experiences = [
 	},
 ];
 
-export { services, technologies, experiences };
+const projects = [
+	{
+		name: "Basic ERP Solution",
+		description:
+			<span>A software that streamlined the company's document flow, including orders, invoices, price offers, and delivery notes. Before the ERP, manual processes led to errors and delays. With the system, I <b>automated order processing</b>, <b>ensured accurate invoicing</b>, and <b>seamlessly managed price offers</b>. The ERP improved communication between departments, optimizing delivery note creation and providing real-time visibility into inventory and order statuses. Overall, the ERP system <b>enhanced efficiency</b>, <b>reduced errors</b>, and <b>improved customer satisfaction</b>.</span>,
+			tags: [
+				{
+				  name: "frontend",
+				  color: "blue-text-gradient",
+				},
+				{
+				  name: "backend",
+				  color: "green-text-gradient",
+				},
+				{
+				  name: "database",
+				  color: "pink-text-gradient",
+				},
+			  ],
+		image: nda,
+	},
+	{
+		name: "Registrul Constructorilor",
+		description:
+			<span>An innovative social media and project management mobile application designed for both Android and iOS platforms. Your go-to solution for transparent insights in construction and real estate. Explore reviews, join a community for unfiltered feedback, and discover top-rated companies. <b>Solve industry challenges</b> by promoting transparency, ensuring quality, and empowering users.</span>,
+			tags: [
+				{
+				  name: "frontend",
+				  color: "blue-text-gradient",
+				},
+				{
+				  name: "backend",
+				  color: "green-text-gradient",
+				},
+				{
+				  name: "database",
+				  color: "pink-text-gradient",
+				},
+			  ],
+		image: rcdi,
+	},
+	{
+		name: "GamETH Roulette",
+		description:
+			<span>Players connect their Ethereum wallets for a seamless and secure gaming experience, thanks to smart contracts ensuring fair play and instant token transfers. Our platform guarantees over a <b>97% player win rate</b>—far surpassing the odds found in centralized casinos.</span>,
+			tags: [
+				{
+				  name: "frontend",
+				  color: "blue-text-gradient",
+				},
+				{
+				  name: "backend",
+				  color: "green-text-gradient",
+				},
+				{
+				  name: "blockchain",
+				  color: "pink-text-gradient",
+				},
+			  ],
+		image: roulette,
+		source_code_link: "https://github.com/LucianBota/scaffold-eth-2-gameth",
+	},
+	{
+		name: "OEE + OLE Solution",
+		description:
+			<span>Enhance the production management's tracking of employee and machine performance. The system provided insights through weekly, periodical, and yearly reports, <b>optimizing operational efficiency</b>. Precise monitoring of machine productivity and employee efficiency led to <b>real-time adjustments</b> and <b>strategic decision-making</b>, enhancing transparency, accountability, and overall productivity.</span>,
+			tags: [
+				{
+				  name: "frontend",
+				  color: "blue-text-gradient",
+				},
+				{
+				  name: "backend",
+				  color: "green-text-gradient",
+				},
+				{
+				  name: "database",
+				  color: "pink-text-gradient",
+				},
+			  ],
+		image: nda,
+	},
+	{
+		name: "Downtime Monitoring Solution",
+		description:
+			<span><b>Significantly improved operations</b> in the engineering and production departments. The real-time tracking of machine issues allowed the engineering team to proactively address problems, reducing unplanned downtime. In production, the application's alerts enabled quick responses to malfunctions, <b>enhancing overall efficiency</b>. The data-driven insights facilitated informed decision-making, leading to a smoother and more reliable production process.</span>,
+			tags: [
+				{
+				  name: "frontend",
+				  color: "blue-text-gradient",
+				},
+				{
+				  name: "backend",
+				  color: "green-text-gradient",
+				},
+				{
+				  name: "database",
+				  color: "pink-text-gradient",
+				},
+			  ],
+		image: nda,
+	},
+	{
+		name: "Employee Bonus Calculation Solution",
+		description:
+			<span>Revolutionized bonus management, the system seamlessly automated calculations, <b>ensuring equitable distribution</b> within allocated budgets. Its user-friendly interface facilitated easy data input, while insightful reports empowered strategic decision-making, ultimately <b>elevating the efficiency and effectiveness</b> of the HR department.</span>,
+			tags: [
+				{
+				  name: "frontend",
+				  color: "blue-text-gradient",
+				},
+				{
+				  name: "backend",
+				  color: "green-text-gradient",
+				},
+				{
+				  name: "database",
+				  color: "pink-text-gradient",
+				},
+			  ],
+		image: nda,
+	},
+	{
+		name: "NFT Marketplace",
+		description:
+			<span>Cutting-edge NFT Marketplace, for connecting artists and collectors worldwide. Orchestrated the integration of blockchain technology, and web3 concepts to enable <b>seamless</b> buying, selling, and trading of unique digital assets.</span>,
+			tags: [
+				{
+				  name: "backend",
+				  color: "green-text-gradient",
+				},
+				{
+				  name: "blockchain",
+				  color: "pink-text-gradient",
+				},
+			  ],
+		image: backend,
+		source_code_link: "https://github.com/LucianBota/hardhat-nft-marketplace"
+	},
+	{
+		name: "Basic DeFi",
+		description:
+			<span>A fundamental DeFi project utilizing Aave protocol, demonstrating the ability to programmatically handle asset borrowing, depositing, and repaying. Developed smart contracts and integrated blockchain technologies to create a <b>functional decentralized financial ecosystem</b>.</span>,
+			tags: [
+				{
+				  name: "backend",
+				  color: "green-text-gradient",
+				},
+				{
+				  name: "blockchain",
+				  color: "pink-text-gradient",
+				},
+			  ],
+		image: backend,
+		source_code_link: "https://github.com/LucianBota/hardhat-defi",
+	},
+	{
+		name: "GamETH Raffle",
+		description:
+			<span>User-friendly application that enables participants to effortlessly engage in raffles using cryptocurrency on the Ethereum blockchain. Ensured <b>fairness and transparency</b> by implementing an automated winner selection mechanism powered by smart contracts.</span>,
+			tags: [
+				{
+				  name: "backend",
+				  color: "green-text-gradient",
+				},
+				{
+				  name: "blockchain",
+				  color: "pink-text-gradient",
+				},
+			  ],
+		image: backend,
+		source_code_link: "https://github.com/LucianBota/smartcontract-lottery",
+	},
+	{
+		name: "Smart Questionnaires",
+		description:
+			<span>Multiple smart questionnaires that effortlessly capture valuable insights. With the collected data, the client company gains the leverage to optimize processes and make impactful, data-driven decisions, driving <b>enhanced efficiency and strategic refinement</b>.</span>,
+			tags: [
+				{
+				  name: "frontend",
+				  color: "blue-text-gradient",
+				},
+				{
+				  name: "backend",
+				  color: "green-text-gradient",
+				},
+				{
+				  name: "database",
+				  color: "pink-text-gradient",
+				},
+			  ],
+		image: nda,
+	},
+	{
+		name: "Employee Expenses Settlement Management Solution",
+		description:
+			<span>Revolutionized expense management, streamlining the entire process from submission to approval. This intuitive system <b>reduced administrative overhead</b>, <b>enhanced transparency</b>, and <b>accelerated reimbursement cycles</b>, providing organizations with newfound efficiency and financial control in managing expenses.</span>,
+			tags: [
+				{
+				  name: "frontend",
+				  color: "blue-text-gradient",
+				},
+				{
+				  name: "backend",
+				  color: "green-text-gradient",
+				},
+				{
+				  name: "database",
+				  color: "pink-text-gradient",
+				},
+			  ],
+		image: nda,
+	},
+	{
+		name: "Employee Trainings Management Solution",
+		description:
+			<span>Streamlining training processes, this application significantly boosted the HR department's efficiency. It provided centralized control over program planning, seamless communication, and comprehensive tracking. The user-friendly interface facilitated easy content management and reporting.</span>,
+			tags: [
+				{
+				  name: "frontend",
+				  color: "blue-text-gradient",
+				},
+				{
+				  name: "backend",
+				  color: "green-text-gradient",
+				},
+				{
+				  name: "database",
+				  color: "pink-text-gradient",
+				},
+			  ],
+		image: nda,
+	},
+	{
+		name: "Vacation Days Requests Management Solution",
+		description:
+			<span>It enabled employees to submit requests electronically. The system automated approval workflows, providing a user-friendly interface for employees and a centralized dashboard for HR. This resulted in <b>improved efficiency</b>, quicker approval times, and <b>better workforce management</b> through data-driven insights into employee leave patterns.</span>,
+			tags: [
+				{
+				  name: "frontend",
+				  color: "blue-text-gradient",
+				},
+				{
+				  name: "backend",
+				  color: "green-text-gradient",
+				},
+				{
+				  name: "database",
+				  color: "pink-text-gradient",
+				},
+			  ],
+		image: nda,
+	},
+	{
+		name: "MSDS Generator",
+		description:
+			<span>An application that simplified document creation, <b>saving time</b> and <b>ensuring accuracy</b>. The tool enhanced compliance, reduced errors, and contributed to a safer work environment, reinforcing the company's commitment to efficiency and safety.</span>,
+			tags: [
+				{
+				  name: "frontend",
+				  color: "blue-text-gradient",
+				},
+				{
+				  name: "backend",
+				  color: "green-text-gradient",
+				},
+				{
+				  name: "database",
+				  color: "pink-text-gradient",
+				},
+			  ],
+		image: nda,
+	},
+];
+
+export { services, technologies, experiences, projects };
