@@ -27,8 +27,6 @@ const Hero = () => {
 								sequence={[
 									"",
 									1000,
-									"Hi! :)",
-									1000,
 									"Hi, I'm ",
 									0,
 									() => setActiveTextAnimation(2),
@@ -59,13 +57,13 @@ const Hero = () => {
 								sequence={[
 									"",
 									1000,
-									"I turn technology into your business's greatest asset",
+									"The one who turns technology into your business's greatest asset",
 									0,
 									() => setActiveTextAnimation(0),
 								]}
 							/>
 						) : activeTextAnimation == 0 ? (
-							"I turn technology into your business's greatest asset"
+							"The one who turns technology into your business's greatest asset"
 						) : null}
 					</p>
 				</div>
